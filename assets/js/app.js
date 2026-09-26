@@ -133,9 +133,11 @@ function createPostCard(eve) {
             }
         }
     }
+}
     //===========================================================================================
     //3.Edit :=
     function onEdit(ele) {
+        cl('click');
         let card = ele.closest('.col-md-3')
         card.querySelector('#removeBtn').disabled = true;
 
@@ -168,7 +170,7 @@ function createPostCard(eve) {
             hideSpinner();
         }
     }
-}
+
 //==========================================================================
 //4.Update:=
 function onUpdate() {
@@ -240,4 +242,4 @@ function onRemove(ele) {
 }
 //===============================================================================
 formpostData.addEventListener('submit', createPostCard);
-updateBtn.addEventListener('click', onUpdate)
+updateBtn.addEventListener('click', onUpdate);
